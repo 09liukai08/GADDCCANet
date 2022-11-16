@@ -1,11 +1,11 @@
 # feeder
 data_feeder_args:
-  data_path_view1: ./data-ETH/random1/train_view1.npy
-  data_path_view2: ./data-ETH/random1/train_view2.npy
-  label_path: ./data-ETH/random1/train_labels.npy
-  testdata_path_view1: ./data-ETH/random1/test_view1.npy
-  testdata_path_view2: ./data-ETH/random1/test_view2.npy
-  testlabel_path: ./data-ETH/random1/test_labels.npy
+  data_path_view1: ./data-ETH/train_view1.npy
+  data_path_view2: ./data-ETH/train_view2.npy
+  label_path: ./data-ETH/train_labels.npy
+  testdata_path_view1: ./data-ETH/test_view1.npy
+  testdata_path_view2: ./data-ETH/test_view2.npy
+  testlabel_path: ./data-ETH/test_labels.npy
 
 # model
 model: model.GADDCCANet.Model

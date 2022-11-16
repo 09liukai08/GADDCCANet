@@ -80,8 +80,7 @@ class Processor():
         self.model = Model().cuda(output_device)
 
 
-    def start(self):
-        #self.model.train()
+    def start(self):        
         print('start running')
         startTime = datetime.datetime.now()
         with torch.no_grad():

@@ -3,25 +3,14 @@ from __future__ import print_function
 
 import argparse
 import datetime
-import inspect
 import os
-import pickle
-import random
-import shutil
 import time
-from collections import OrderedDict, defaultdict
-
 import numpy as np
 # torch
 import torch
 import torch.backends.cudnn as cudnn
 import torch.nn as nn
-import torch.optim as optim
 import yaml
-from tensorboardX import SummaryWriter
-from torch.optim.lr_scheduler import MultiStepLR
-from tqdm import tqdm
-
 
 def get_parser():
     parser = argparse.ArgumentParser(

@@ -1,1 +1,16 @@
+# feeder
+data_feeder_args:
+  data_path_view1: ./data/train_view1.npy
+  data_path_view2: ./data/train_view2.npy
+  label_path: ./data/train_labels.npy
+  testdata_path_view1: ./data/test_view1.npy
+  testdata_path_view2: ./data/test_view2.npy
+  testlabel_path: ./data/test_labels.npy
+
+# model
+model: model.GADDCCANet.Model
+
+device: [0]
+
+
 

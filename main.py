@@ -17,7 +17,7 @@ def get_parser():
         description='GADDCCANet')
     parser.add_argument(
         '--config',
-        default='./config/ETH80/run.yaml',
+        default='./config/run.yaml',
         help='path to the configuration file')
 
     parser.add_argument(

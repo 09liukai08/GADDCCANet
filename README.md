@@ -38,5 +38,6 @@ You can also try different setting by changing the value of the following part i
   svm_kernel: linear  # the kernel type for SVM classifer, the value can be one of these type: linear   poly   sigmoid   rbf<br/>
 
 <br/>
+
 __Run the model:__<br/>
 python main.py<br/>

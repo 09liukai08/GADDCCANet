@@ -66,8 +66,7 @@ class Processor():
         self.output_device = output_device
         Model = import_class(self.arg.model)
         print(Model)
-        self.model = Model().cuda(output_device)
-
+        self.model = Model(**self.arg.model_args).cuda(output_device)
 
     def start(self):        
         print('start running')

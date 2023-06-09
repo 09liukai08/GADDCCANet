@@ -22,7 +22,7 @@ PS: if you want to have a quick try, you can just download the ORL and ETH data 
 __Set Parameter:__<br/>
 You can skip this step if you use the default setting in the config file run.yaml.<br/>
 <br/>
-You can also try different setting by changing the value of the following part in the config file run.yaml:<br/>
+You can also try different setting by changing the value of the following part in the config file run.yaml:<br/><br/>
   layers_number: 3  # the number of convolution layers, can be 2 or 3<br/>
   batch_size: 32  # adjust the batch_size according to your GPU's memory<br/>
   layer1_filter_size: 4 # the filter size for 1st convolution layer, Recommended setting is 4-8<br/>

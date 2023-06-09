@@ -10,6 +10,21 @@ data_feeder_args:
 # model
 model: model.GADDCCANet.Model
 
+model_args:
+  layers_number: 2  # the number of convolutional layers, can be 2 or 3
+  layer1_filter_size: 8 # the filter size for 1st convolutional layer, Recommended setting is 4~8
+  layer2_filter_size: 8 # the filter size for 2nd convolutional layer, Recommended setting is 4~8
+  layer3_filter_size: 8 # the filter size for 3rd convolutional layer, Recommended setting is 4~8
+  layer1_patch_size: 7  # the patch size for 1st convolutional layer, Recommended setting is 4~7
+  layer2_patch_size: 7  # the patch size for 2nd convolutional layer, Recommended setting is 4~7
+  layer3_patch_size: 7  # the patch size for 3rd convolutional layer, Recommended setting is 4~7
+  reg_term: 0.00001  # learning rate
+  overlap_ratio: 0.5
+  histblk_size: 7
+  pca_keep_dim: 199 # the feature dimension after reducing by PCA
+  svm_kernel: linear  # the kernel type for SVM classifer, it can be one of these type: linear   poly   sigmoid   rbf
+  batch_size: 32  # adjust the batch_size according to your GPU's memory
+
 device: [0]
 
 

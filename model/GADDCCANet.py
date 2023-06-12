@@ -71,11 +71,11 @@ class Model(nn.Module):
 
         for i in range(m):
             for j in range(n):
-                res = pad_img[i:i + 2 * pad_sz + 1, j:j + 2 * pad_sz + 1, :, :]
+                #res = pad_img[j:j + 2 * pad_sz + 1, i:i + 2 * pad_sz + 1, :, :]
                 # print(i)
                 # print(j)
                 # print(res.shape)
-                patches[:, :, :, :, i * n + j] = pad_img[i:i + 2 * pad_sz + 1, j:j + 2 * pad_sz + 1, :, :]
+                patches[:, :, :, :, i * n + j] = pad_img[j:j + 2 * pad_sz + 1, i:i + 2 * pad_sz + 1, :, :]
 
         patches = patches.view(patch_sz * patch_sz, l * b, -1)  # [49,4*8,1024]
 

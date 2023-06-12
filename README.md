@@ -7,9 +7,9 @@ __Requirement:__<br/>
   yaml.<br/>
  
 __Data preparation:__<br/>
-1.Prepare your RGB image datasets and split them into training data and testing data.<br/>
+1.Prepare your image datasets and split them into training data and testing data.<br/>
 <br/>
-2.Extract the R channel from the RGB in the training data and testing data. The data shape should be [N, H, W], where N is the number of samples, H is the height of an image, and W is the width of an image. Save these as train_view1.npy and test_view1.npy, respectively. Similarly, extract the G channel and save it as train_view2.npy and test_view2.npy.<br/>
+2.Obtain two distinct views from both the training and testing sets. Ensure that the shape of each data view is [N, H, W], where N represents the number of samples, and H and W are two dimensions of the data. Then save the two distinct views of the training data as train_view1.npy and train_view2.npy, respectively. Similarly, save the two distinct views of the testing data as test_view1.npy and test_view2.npy.<br/>
 <br/>
 3.Prepare the corresponding labels for the training data and testing data, saving them as train_labels.npy and test_labels.npy. The data shape should be [N], where N is the number of samples.<br/>
 <br/>
@@ -18,7 +18,10 @@ __Data preparation:__<br/>
 
 PS: if you want to have a quick try, you can just download the ORL and ETH data with two views from the Google drive link: <br/>https://drive.google.com/drive/folders/1p_HJj4lNxPi2lZxGiF9E1OrBCfexdisl?usp=drive_link
 <br/>
-
+For the two views of the ORL data, the first view is based on the original grayscale image data of ORL, its shape is [N, H, W], where N stands for the number of samples and H, W represent the height and width of the image, respectively. The second view is obtained from the data processed by the Local Binary Pattern (LBP) method, which also has the shape [N, H, W].<br/>
+<br/>
+For the two views of the ETH data, the first view is extracted from the Red (R) channel of the RGB image, its shape is [N, H, W], where N indicates the number of samples and H, W correspond to the image's height and width. The second view is derived from the Green (G) channel of the RGB image, which also has the [N, H, W] shape.<br/>
+<br/>
 __Set Parameter:__<br/>
 You can skip this step if you use the default setting in the config file run.yaml.<br/>
 <br/>

@@ -17,7 +17,7 @@ __Data preparation:__<br/>
 <br/>
 
 PS: if you want to have a quick try, you can just download the ORL and ETH data with two views from the Google drive link: <br/>https://drive.google.com/drive/folders/1p_HJj4lNxPi2lZxGiF9E1OrBCfexdisl?usp=drive_link
-<br/>
+<br/><br/>
 For the two views of the ORL data, the first view is based on the original grayscale image data of ORL, its shape is [N, H, W], where N stands for the number of samples and H, W represent the height and width of the image, respectively. The second view is obtained from the data processed by the Local Binary Pattern (LBP) method, which also has the shape [N, H, W].<br/>
 <br/>
 For the two views of the ETH data, the first view is extracted from the Red (R) channel of the RGB image, its shape is [N, H, W], where N indicates the number of samples and H, W correspond to the image's height and width. The second view is derived from the Green (G) channel of the RGB image, which also has the [N, H, W] shape.<br/>

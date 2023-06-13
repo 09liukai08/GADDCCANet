@@ -46,6 +46,7 @@ You can also try different setting by changing the value of the following part i
   layer1_patch_size: 7  # the patch size for 1st convolution layer, Recommended setting is 4-7<br/>
   layer2_patch_size: 7  # the patch size for 2nd convolution layer, Recommended setting is 4-7<br/>
   layer3_patch_size: 7  # the patch size for 3rd convolution layer, Recommended setting is 4-7<br/>
+  histblk_size: 7 # the number of blocks of each generated image is partitioned into, Recommended setting is 4~8<br/>
   svm_kernel: linear  # the kernel type for SVM classifer, the value can be one of these type: linear   poly   sigmoid   rbf<br/>
 
 <br/>

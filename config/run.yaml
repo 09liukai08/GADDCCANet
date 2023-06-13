@@ -20,7 +20,7 @@ model_args:
   layer3_patch_size: 7  # the patch size for 3rd convolutional layer, Recommended setting is 4~7
   reg_term: 0.00001  # learning rate
   overlap_ratio: 0.5
-  histblk_size: 7
+  histblk_size: 7 # the number of blocks of each generated image is partitioned into, Recommended setting is 4~8
   pca_keep_dim: 199 # the feature dimension after reducing by PCA
   svm_kernel: linear  # the kernel type for SVM classifer, it can be one of these type: linear   poly   sigmoid   rbf
   batch_size: 32  # adjust the batch_size according to your GPU's memory

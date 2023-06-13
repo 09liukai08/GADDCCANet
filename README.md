@@ -57,4 +57,4 @@ python main.py<br/>
 Reference:
 <br/>
 [1]K. Liu, L. Gao, and L. Guan. "A GPU-accelerated Algorithm for Distinct Discriminant Canonical Correlation Network." arXiv preprint arXiv:2209.13027 (2022).<br/>
-[2]L. Gao and L. Guan. "Interpretability of Machine Learning: Recent Advances and Future Prospects." arXiv preprint arXiv:2305.00537 (2023).<br/>
+[2]L. Gao and L. Guan. "Interpretability of Machine Learning: Recent Advances and Future Prospects." To appear in IEEE Multimedia, arXiv preprint arXiv:2305.00537 (2023).<br/>

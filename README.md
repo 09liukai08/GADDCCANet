@@ -1,3 +1,6 @@
+
+# GADDCCANet
+<br/>
 The GADDCCANet is proposed based on the integration of statistical machine learning (SML) principles with neural networ (NN) architecture. Since there is no loss function with given/fixed values associated with GADDCCANet, the popular backpropagation (BP) algorithm is not used in this work and the parameters of the convolutional layers in the network are determined by analytically solving a SML-based optimization problem in each convolutional layer independently instead. Essentially, the GADDCCANet model can be applied to different types of input features (such as original images, handcrafted features, deep neural network (DNN)-based features, etc.). <br/>
 <br/>
 All our experiments were conducted under the following hardware environment:<br/>
@@ -7,7 +10,7 @@ One NVIDIA RTX 3060 12GB Video Card<br/>
 More detailed information is given as follws:<br/>
 <br/>
 <br/>
-# GADDCCANet
+
 __Requirement:__<br/>
   Python 3.8;<br/>
   Pytorch 1.11.0;<br/>

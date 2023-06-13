@@ -1,3 +1,14 @@
+The GADDCCANet is proposed based on the integration of statistical machine learning (SML) principles with neural networ (NN) architecture. Since there is no loss function with given/fixed values associated with GADDCCANet, the popular backpropagation (BP) algorithm is not used in this work and the parameters of the convolutional layers in the network are determined by analytically solving a SML-based optimization problem in each convolutional layer independently instead. Essentially, the GADDCCANet model can be applied to different types of input features (such as original images, handcrafted features, deep neural network (DNN)-based features, etc.). <br/>
+<br/>
+More detailed information is given as follws:<br/>
+<br/>
+All our experiments were conducted under the following hardware environment:<br/>
+<br/>
+One NVIDIA RTX 3060 12GB Video Card<br/>
+<br/>
+64GB Memory<br/>
+<br/>
+<br/>
 # GADDCCANet
 __Requirement:__<br/>
   Python 3.8;<br/>
@@ -34,13 +45,15 @@ You can also try different setting by changing the value of the following part i
   layer1_patch_size: 7  # the patch size for 1st convolution layer, Recommended setting is 4-7<br/>
   layer2_patch_size: 7  # the patch size for 2nd convolution layer, Recommended setting is 4-7<br/>
   layer3_patch_size: 7  # the patch size for 3rd convolution layer, Recommended setting is 4-7<br/>
-  reg_term: 0.00001  # learning rate<br/>
-  overlap_ratio: 0.5<br/>
-  histblk_size: 7<br/>
-  pca_keep_dim: 199 # the feature dimension after reducing by PCA<br/>
   svm_kernel: linear  # the kernel type for SVM classifer, the value can be one of these type: linear   poly   sigmoid   rbf<br/>
 
 <br/>
 
 __Run the model:__<br/>
 python main.py<br/>
+<br/>
+<br/>
+Reference:
+<br/>
+[1]K. Liu, L. Gao, and L. Guan. "A GPU-accelerated Algorithm for Distinct Discriminant Canonical Correlation Network." arXiv preprint arXiv:2209.13027 (2022).<br/>
+[2]L. Gao, and L. Guan. "Interpretability of Machine Learning: Recent Advances and Future Prospects." IEEE MultiMedia (2023).<br/>

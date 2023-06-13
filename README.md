@@ -18,7 +18,7 @@ __Requirement:__<br/>
 __Data preparation:__<br/>
 1.Prepare your image datasets and split them into training data and testing data.<br/>
 <br/>
-2.Obtain two distinct views from both the training and testing sets. Ensure that the shape of each data view is [N, H, W], where N represents the number of samples, and H and W are two dimensions of the data. Then save the two distinct views of the training data as train_view1.npy and train_view2.npy, respectively. Similarly, save the two distinct views of the testing data as test_view1.npy and test_view2.npy.<br/>
+2.Obtain two distinct views from both the training and testing sets. Ensure that the shape of each data/feature view is [N, H, W], where N represents the number of samples, and H and W are two dimensions of the data/feature. Then save the two distinct views of the training data as train_view1.npy and train_view2.npy, respectively. Similarly, save the two distinct views of the testing data as test_view1.npy and test_view2.npy. Please note that the 'data/feature' refers to any kind of data or feature such as raw data, or any feature extracted by any algorithm as long as its shape is [N, H, W] <br/>
 <br/>
 3.Prepare the corresponding labels for the training data and testing data, saving them as train_labels.npy and test_labels.npy. The data shape should be [N], where N is the number of samples.<br/>
 <br/>
@@ -54,4 +54,4 @@ python main.py<br/>
 Reference:
 <br/>
 [1]K. Liu, L. Gao, and L. Guan. "A GPU-accelerated Algorithm for Distinct Discriminant Canonical Correlation Network." arXiv preprint arXiv:2209.13027 (2022).<br/>
-[2]L. Gao, and L. Guan. "Interpretability of Machine Learning: Recent Advances and Future Prospects." IEEE MultiMedia (2023).<br/>
+[2]L. Gao and L. Guan. "Interpretability of Machine Learning: Recent Advances and Future Prospects." arXiv preprint arXiv:2305.00537 (2023).<br/>

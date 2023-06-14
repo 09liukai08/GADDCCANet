@@ -28,11 +28,14 @@ __Data preparation:__<br/>
 4.Place the resulting train_view1.npy, test_view1.npy, train_view2.npy, test_view2.npy, train_labels.npy, and test_labels.npy files in the data folder.<br/>
 <br/>
 
-PS: if you want to have a quick try, you can just download the ORL and ETH data with two views from the Google drive link: <br/>https://drive.google.com/drive/folders/1p_HJj4lNxPi2lZxGiF9E1OrBCfexdisl?usp=drive_link
+PS: if you want to have a quick try, you can just download the ORL, ETH and FERET data with corresponding parameter setting from the Google drive link: <br/>https://drive.google.com/drive/folders/1p_HJj4lNxPi2lZxGiF9E1OrBCfexdisl?usp=drive_link
 <br/><br/>
 For the two views of the ORL data, the first view is based on the original grayscale image data of ORL, its shape is [N, H, W], where N stands for the number of samples and H, W represent the height and width of the image, respectively. The second view is obtained from the data processed by the Local Binary Pattern (LBP) method, which also has the shape [N, H, W].<br/>
 <br/>
 For the two views of the ETH data, the first view is extracted from the Red (R) channel of the RGB image, its shape is [N, H, W], where N indicates the number of samples and H, W correspond to the image's height and width. The second view is derived from the Green (G) channel of the RGB image, which also has the [N, H, W] shape.<br/>
+<br/>
+<br/>
+For the FERET data, two experimental settings are adopted, front-left and front-right. In the first experimental settings, the front samples are utilized for training while left samples for testing. In the second, the front images are still adopted as train samples but the right samples are utilized for testing. In addition, each facial sample is resized to the size 20 × 20 as the 2D data set view1. The twice wavelet transform is performed on each sample in the data set view1 to generate the corresponding 2D data set view2.<br/>
 <br/>
 __Set Parameter:__<br/>
 You can skip this step if you use the default setting in the config file run.yaml.<br/>

@@ -35,7 +35,7 @@ For the two views of the ORL data, the first view is based on the original grays
 For the two views of the ETH data, the first view is extracted from the Red (R) channel of the RGB image, its shape is [N, H, W], where N indicates the number of samples and H, W correspond to the image's height and width. The second view is derived from the Green (G) channel of the RGB image, which also has the [N, H, W] shape.<br/>
 <br/>
 <br/>
-For the FERET data, two experimental settings are adopted, front-left and front-right. In the first experimental settings, the front samples are utilized for training while left samples for testing. In the second, the front images are still adopted as train samples but the right samples are utilized for testing. In addition, each facial sample is resized to the size 20 × 20 as the 2D data set view1. The twice wavelet transform is performed on each sample in the data set view1 to generate the corresponding 2D data set view2.<br/>
+For the FERET data, two experimental settings are adopted, front-left and front-right. In the first experimental settings, the front samples are utilized for training while left samples for testing. In the second, the front images are still adopted as train samples but the right samples are utilized for testing. In addition, each facial sample is resized to the size 20 × 20 as the 2D data set view1. The twice wavelet transform is performed on each sample in the data set view1 to generate the corresponding 2D data set view2. Both view1 and view2 has the [N, H, W] shape. <br/>
 <br/>
 __Set Parameter:__<br/>
 You can skip this step if you use the default setting in the config file run.yaml.<br/>
